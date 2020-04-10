@@ -1,0 +1,14 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: credigo
+  buildpack: sdk-for-nodejs
+  command: npm start
+  disk_quota: 1G
+  memory: 128MB
+  domain: eu-gb.mybluemix.net
+  host: credigo
+  services:
+    - credigo-cloudant-1584496271890-5148
+    - credigo-iotplatform-1584496591401-51374
